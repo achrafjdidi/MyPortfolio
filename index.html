@@ -1,16 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achraf JDIDI - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        
+        p {
+            color: #666;
+        }
 
-<html>
-    <h1>
-        Hey, I'm Achraf JDIDI
-    </h1>
-    <body>
+        .banner {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .banner img {
+            max-width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .banner img:hover {
+            transform: scale(1.05);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hey, I'm Achraf JDIDI</h1>
         <h2>About me</h2>
-        <p>
-            I am a coffee addict.
-        </p>
+        <p>I am a coffee addict.</p>
         <h2>What I'm working on</h2>
-        <p>
-            I'm obsessed with AI right now and I'm working on the CPTS from HTB.
-        </p>
-    </body>
+        <p>I'm obsessed with AI right now and I'm working on the CPTS from HTB.</p>
+        <div class="banner">
+            <a href="link_to_your_project"><img src="project_banner_image.jpg" alt="Project Banner"></a>
+        </div>
+        <div class="banner">
+            <a href="link_to_another_project"><img src="another_project_banner_image.jpg" alt="Another Project Banner"></a>
+        </div>
+        <a href="contact.html" class="btn">Contact me</a>
+    </div>
+</body>
 </html>
