@@ -43,6 +43,12 @@
             margin: 0 auto 20px; /* Centers the image and adds space below */
             border: 3px solid #fff;
             box-shadow: 0 0 8px rgba(0,0,0,0.3);
+            cursor: pointer; /* Indicates the image can be interacted with */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-pic.enlarged {
+            transform: scale(1.5); /* Enlarges the image by 50% */
         }
 
         .btn {
@@ -70,6 +76,14 @@
             margin-right: 10px;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const profilePic = document.querySelector('.profile-pic');
+            profilePic.addEventListener('click', function () {
+                this.classList.toggle('enlarged');
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container">
