@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Achraf JDIDI - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -62,6 +63,16 @@
         .btn:hover {
             background-color: #0056b3;
         }
+
+        .link-with-icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .link-with-icon i {
+            margin-right: 10px;
+        }
         
         @media only screen and (max-width: 600px) {
             .container {
@@ -83,7 +94,10 @@
         <div class="banner">
             <a href="link_to_another_project"><img src="another_project_banner_image.jpg" alt="Another Project Banner"></a>
         </div>
-        <a href="contact.html" class="btn">Contact me</a>
+        <div class="link-with-icon">
+            <i class="fas fa-envelope"></i>
+            <a href="contact.html">Contact me</a>
+        </div>
     </div>
 </body>
 </html>
