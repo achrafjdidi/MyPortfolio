@@ -110,11 +110,17 @@
             justify-content: center;
             align-items: center;
             transition: opacity 0.3s ease-in-out; /* Add transition for smooth fade out */
+            flex-direction: column; /* Align items vertically */
         }
 
         .loader.fade-out {
             opacity: 0; /* Make loader invisible */
             visibility: hidden; /* Remove loader from the flow of the document */
+        }
+
+        .loader-text {
+            color: #00ff00; /* Change the text color to green */
+            margin-top: 20px; /* Add some space between the GIF and the text */
         }
     </style>
     <script>
@@ -135,6 +141,7 @@
     <!-- Loading screen -->
     <div class="loader">
         <img src="https://raw.githubusercontent.com/achrafjdidi/MyPortfolio/main/giphy.gif" alt="Loading..."> <!-- Add your new loading gif here -->
+        <div class="loader-text">Loading...</div> <!-- Add your loading text here -->
     </div>
 
     <div class="navbar">
